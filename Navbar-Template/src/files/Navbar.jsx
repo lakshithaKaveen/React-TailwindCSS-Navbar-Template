@@ -38,7 +38,7 @@ function Navbar() {
                 <div className={`nav-links bg-black duration-500 md:static absolute md:min-h-fit min-h-[45vh] left-0 ${isMenuOpen ? 'top-[10%] ' : 'top-[-100%]'} md:w-auto w-full flex items-center px-5`}>
                     <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                         {NavMenus.map((Menu, index) => (
-                            <li key={index} onClick={(e, path) => navigateDashBoard(e, Menu.path)} className="cursor-pointer">
+                            <li key={index} onClick={(e, path) => navigateDashBoard(e, Menu.path)} className="cursor-pointer hover:text-blue-600 ">
                                 <span>{Menu.title}</span>
                             </li>
                         ))}
